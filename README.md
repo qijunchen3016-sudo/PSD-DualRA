@@ -10,6 +10,8 @@ Chongqing University of Technology, Chongqing 400054, China
 
 <sup>†</sup>Corresponding author — `{DiMing, xfeng, ylwang}@cqut.edu.cn`
 
+**Accepted at PRCV 2026** — Chinese Conference on Pattern Recognition and Computer Vision
+
 </div>
 
 ---
@@ -27,7 +29,7 @@ residual branch**. A high-frequency spectral constraint prevents noise over-ampl
 and the denoised representation drives a learnable **ISP adapter** for detector-friendly
 features. The adapter is trained end-to-end with either **YOLOX** or **Faster R-CNN**.
 
-![overview](docs/figures/overview.png)
+![overview](https://cdn.jsdelivr.net/gh/qijunchen3016-sudo/PSD-DualRA@main/docs/figures/overview.png)
 
 ## Method
 
@@ -195,43 +197,43 @@ With **YOLOX-Tiny** on LOD-Dark and NOD-Sony, PSD-DualRA reaches **41.4 / 59.9**
 Qualitative comparison with GenISP, RAOD and RawAdapter on representative RAW low-light scenes.
 PSD-DualRA better preserves scene structures, giving more accurate and stable detections.
 
-![qualitative](docs/figures/qualitative.png)
+![qualitative](https://cdn.jsdelivr.net/gh/qijunchen3016-sudo/PSD-DualRA@main/docs/figures/qualitative.png)
 
 Detection results with YOLOX on LOD-Dark and NOD-Sony.
 
-![yolox](docs/figures/yolox.png)
+![yolox](https://cdn.jsdelivr.net/gh/qijunchen3016-sudo/PSD-DualRA@main/docs/figures/yolox.png)
 
 ### Ablation
 
 Qualitative results on LOD-Dark under different loss configurations, and the effect of the
 spatial / frequency branches.
 
-![ablation](docs/figures/ablation_vis.png)
+![ablation](https://cdn.jsdelivr.net/gh/qijunchen3016-sudo/PSD-DualRA@main/docs/figures/ablation_vis.png)
 
 Attention-based visualization on three RAW low-light benchmarks — responses concentrate on
 structure-sensitive regions (boundaries, wheels/frames, pedestrian contours).
 
-![attention](docs/figures/attention.png)
+![attention](https://cdn.jsdelivr.net/gh/qijunchen3016-sudo/PSD-DualRA@main/docs/figures/attention.png)
 
 A representative failure case on NOD-Sony: small, weakly-lit pedestrians mixed with complex
 background structures can still be missed.
 
-![failure](docs/figures/failure.png)
+![failure](https://cdn.jsdelivr.net/gh/qijunchen3016-sudo/PSD-DualRA@main/docs/figures/failure.png)
 
 ## Citation
 
 If you find this code useful, please cite:
 
 ```bibtex
-@article{psddualra,
-  title  = {PSD-DualRA: PSD-Guided Dual-Domain RAW Adaptation for Low-Light Object Detection},
-  author = {Feng, Xin and Chen, Qijun and Wang, Yunlong and Wang, Ziteng and Zhang, Yuhan and Di, Ming},
-  year   = {2025}
+@inproceedings{psddualra2026,
+  title     = {PSD-DualRA: PSD-Guided Dual-Domain RAW Adaptation for Low-Light Object Detection},
+  author    = {Feng, Xin and Chen, Qijun and Wang, Yunlong and Wang, Ziteng and Zhang, Yuhan and Di, Ming},
+  booktitle = {Pattern Recognition and Computer Vision (PRCV)},
+  year      = {2026}
 }
 ```
 
-Publication metadata will be added once available; please also cite the RAM baseline and the
-dataset papers listed above.
+Accepted at **PRCV 2026**. Please also cite the RAM baseline and the dataset papers listed above.
 
 ## Acknowledgement
 
